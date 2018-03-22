@@ -4,25 +4,47 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 	<title>Red Garden</title>
+	<link rel="preload" href="/img/red2.jpg" as="image">
 	<link href="https://fonts.googleapis.com/css?family=Amatic+SC|Lilita+One" rel="stylesheet">
+	<link rel="stylesheet"
+  	href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css">
 	<link rel="stylesheet" href="css/style.css">
+
 	<script defer src="https://use.fontawesome.com/releases/v5.0.8/js/solid.js" integrity="sha384-+Ga2s7YBbhOD6nie0DzrZpJes+b2K1xkpKxTFFcx59QmVPaSA8c7pycsNaFwUK6l" crossorigin="anonymous"></script>
 	<script defer src="https://use.fontawesome.com/releases/v5.0.8/js/fontawesome.js" integrity="sha384-7ox8Q2yzO/uWircfojVuCQOZl+ZZBg2D2J5nkpLqzH1HY0C1dHlTKIbpRz/LG23c" crossorigin="anonymous"></script>
+	<script
+  	src="https://code.jquery.com/jquery-3.3.1.min.js"
+  	integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  	crossorigin="anonymous"></script>
 </head>
-<body>
-	<header id="showcase">
-		<div id="logo">
-			<img src="img/redlogo.jpeg">
-		</div>
-		<div class="intro">
-			<h2><span class="intro-header-green">introducing <span class="intro-header-red">red garden</span> ingredients</span><br/>
-				<span class="intro-header-red">with lots of red goodness</span> 
-			</h2>
-		</div>
-		<a href="#" class="button" id="intro-arrow"><i class="fas fa-angle-double-down"></i></a>
-	</header>
-	<section>
-		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium nulla facilis fugiat, maiores repellendus! Praesentium est rerum aspernatur, natus veniam ratione autem quas labore ipsa, reprehenderit fugit blanditiis voluptatum distinctio ducimus nulla omnis ullam ipsam? Ullam nobis architecto nihil voluptatem nulla molestiae cupiditate aspernatur reprehenderit at a, officiis molestias perferendis corrupti ex nostrum expedita quas nisi. Perspiciatis quisquam cupiditate maxime possimus facilis iste earum aliquam repellat tempore molestiae eveniet nulla debitis natus magnam qui, consectetur molestias aliquid modi rerum! Ipsam necessitatibus numquam quas beatae, odio recusandae ducimus temporibus, ipsum modi fuga, eius perspiciatis. Dolorum nemo accusantium voluptate, quos dicta quae.</p>
-	</section>
+<body onload="myFunction()">
+	<div id="loader"></div>
+	<div class="container">
+		<header id="showcase" style="display:none;">
+			<div class="head">
+				<div id="logo">
+					<img src="img/redlogo.jpeg">
+				</div>
+				<div class="intro">
+					<h2><span class="intro-header-green">introducing <span class="intro-header-red">red garden</span> ingredients</span><br/>
+						<span class="intro-header-red">with lots of red goodness</span> 
+					</h2>
+				</div>
+				<a href="#" class="button animated bounce" id="intro-arrow"><i class="fas fa-angle-double-down"></i></a>
+			</div>
+		</header>
+	</div>
+<script>
+var myVar;
 
+function myFunction() {
+    myVar = setTimeout(showPage, 2000);
+}
+
+function showPage() {
+  document.getElementById("loader").style.display = "none";
+  document.getElementById("showcase").style.display = "block";
+}
+</script>
+</body>
 </html>

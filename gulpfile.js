@@ -34,7 +34,6 @@ gulp.task('sass', function() {
 		.pipe(browserSync.stream());
 });
 
-// Scripts
 gulp.task('scripts', function() {
 	return gulp.src(['src/js/*.js'], ['scripts'])
 		.pipe(concat('main.js'))

@@ -1,10 +1,11 @@
 var myVar;
 
 function myFunction() {
-    myVar = setTimeout(showPage, 3000);
+    myVar = setTimeout(showPage, 1500);
 }
 
 function showPage() {
   document.getElementById("loader").style.display = "none";
-  document.getElementById("showcase").style.display = "block";
+  document.getElementById("page").style.display = "block";
 }
+

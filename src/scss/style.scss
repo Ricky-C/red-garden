@@ -12,6 +12,7 @@ body {
 	line-height: 1.6;
 }
 
+// Landing Page
 h2 {
 	color: $secondary-color;
 	font-family: 'Lilita One', cursive;
@@ -21,6 +22,35 @@ h2 {
 	font-size: 32px;
 
 }
+// Nav
+
+.nav {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	list-style: none;
+	align-items: stretch;
+	margin-top: 10px;
+	padding-bottom: 0px;
+}
+
+.nav-item {
+	font-family: 'Amatic SC', cursive;
+	font-size: 26px;
+}
+
+.nav-link {
+	color: $primary-color;
+}
+
+.nav-link:hover {
+	color: $secondary-color;
+}
+
+
+
+
+
 @keyframes fadeIn {
 	from {opacity: 0;}
 	to {opacity: 1;}
@@ -40,12 +70,11 @@ h2 {
 	justify-content: center;
 	align-items: center;
 	text-align: center;
-	padding: 0 30px;
-}
-#logo {
-	padding-top: 40px;
 }
 
+#page {
+	padding: 0;
+}
 .intro-header-green {
 	font-size: 36px;
 	font-weight: 600;
@@ -58,6 +87,11 @@ h2 {
 #intro-arrow {
 	color: $primary-color;
 }
+
+
+
+
+
 
 // loader
 
@@ -120,3 +154,18 @@ h2 {
     height: 5em;
   }
 }
+
+
+.split {
+	display: flex;
+	height: 100vh;
+	background-color: #ecedef;
+	border-radius: .5px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	padding: 0 30px;
+}
+

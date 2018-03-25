@@ -15,6 +15,25 @@ h2 {
   font-weight: 300;
   font-size: 32px; }
 
+.nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  list-style: none;
+  align-items: stretch;
+  margin-top: 10px;
+  padding-bottom: 0px; }
+
+.nav-item {
+  font-family: 'Amatic SC', cursive;
+  font-size: 26px; }
+
+.nav-link {
+  color: #bd3019; }
+
+.nav-link:hover {
+  color: #4aa942; }
+
 @keyframes fadeIn {
   from {
     opacity: 0; }
@@ -34,11 +53,10 @@ h2 {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  text-align: center;
-  padding: 0 30px; }
+  text-align: center; }
 
-#logo {
-  padding-top: 40px; }
+#page {
+  padding: 0; }
 
 .intro-header-green {
   font-size: 36px;
@@ -105,3 +123,15 @@ h2 {
   40% {
     box-shadow: 0 -2em;
     height: 5em; } }
+
+.split {
+  display: flex;
+  height: 100vh;
+  background-color: #ecedef;
+  border-radius: .5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 0 30px; }

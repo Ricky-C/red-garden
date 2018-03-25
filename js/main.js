@@ -1,1 +1,1 @@
-var myVar;function myFunction(){myVar=setTimeout(showPage,3e3)}function showPage(){document.getElementById("loader").style.display="none",document.getElementById("showcase").style.display="block"}console.log("This is file 2"),alert("This is file 2");
+var myVar;function myFunction(){myVar=setTimeout(showPage,1500)}function showPage(){document.getElementById("loader").style.display="none",document.getElementById("page").style.display="block"}

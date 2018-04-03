@@ -17,6 +17,7 @@
     "gulp-uglify": "^3.0.0"
   },
   "dependencies": {
-    "itemslide": "^1.4.0"
+    "itemslide": "^1.4.0",
+    "npm": "^5.8.0"
   }
 }

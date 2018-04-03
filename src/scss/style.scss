@@ -181,7 +181,6 @@ hr {
 	height: 100px;
 	width: 100px;
 	border-radius: 50%;
-	border: 2px $primary-color outset;
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
@@ -189,20 +188,112 @@ hr {
 
 .ingredient-1 {
 	margin-top: 5px;
+	position: relative;
 
 }
 
 .ingredient-name {
 	text-align: center;
-	font-size: 2.25rem;;
+	font-size: 2.25rem;
 	font-weight: 600;
 	margin-bottom: 2px;
 }
 
-p {
+h3{
 	font-family: 'Amatic SC', cursive;
 	color: $primary-color;
+	text-align: center;
 }
+
+.ingredient-learn {
+	display: inline;
+	position: absolute;
+	top: 28%;
+    left: 36%;
+    color: #f8f8f8;
+    font-family: 'Amatic SC';
+    font-size: 28px;
+    font-weight: 600;
+    
+
+}
+// Pom Section
+.pom-learn {
+}
+
+.pom-info {
+	height: 10px;
+	animation-name: pomexpand;
+	animation-duration: 1s;
+	animation-fill-mode: forwards;
+	background-color: $primary-color;
+	color: $primary-color;
+	top: 0px;
+	right: 	0px;
+	bottom: 0px;
+}
+
+.pom-info span {
+	display: none;	
+}
+
+@keyframes pomexpand {
+	0% {width: 59vh; left: -50px; height: 5vh;}
+	100% {width:59vh; left: -50px;height: 15vh;}
+}
+
+// Tom Section
+.tom-learn {
+
+}
+
+.tom-info {
+	height: 10px;
+	animation-name: tomexpand;
+	animation-duration: 1s;
+	animation-fill-mode: forwards;
+	background-color: $primary-color;
+	color: $primary-color;
+	top: 0px;
+	right: 	0px;
+	bottom: 0px;
+}
+
+.tom-info span {
+	display: none;	
+}
+
+@keyframes tomexpand {
+	0% {width: 59vh; left: -50px; height: 5vh;}
+	100% {width:59vh; left: -50px;height: 15vh;}
+}
+
+
+// Cran Section
+.cran-learn {
+
+}
+.cran-info {
+	height: 10px;
+	animation-name: cranexpand;
+	animation-duration: 1s;
+	animation-fill-mode: forwards;
+	background-color: $primary-color;
+	color: $secondary-color	;
+	top: 0px;
+	right: 	0px;
+	bottom: 0px;
+}
+
+.cran-info span {
+	display: none;	
+}
+@keyframes cranexpand {
+	0% {width: 59vh; left: -50px; height: 5vh;}
+	100% {width:59vh; left: -50px;height: 15vh;}
+}
+
+
 @media (max-width: 586px)  {
 	.split {
 		height: 82vh;

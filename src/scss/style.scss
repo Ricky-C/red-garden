@@ -1,6 +1,9 @@
 $primary-color: #bd3019;
 $secondary-color: #4aa942;
 $back-color: #f8f8f8;
+
+$primary-font: 'Amatic SC';
+$secondary-font: 'Lilita One';
 * {
 	margin: 0;
 	padding: 0;
@@ -293,7 +296,66 @@ h3{
 	100% {width:59vh; left: -50px;height: 15vh;}
 }
 
+/*
+** Menu Page
+*/
 
+
+.menu {
+	height: 80vh;
+	background-size: cover;
+	background-image: url('/img/split1.jpg');
+	border-radius: .5px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: right;
+	padding: 0 30px;
+}
+
+.menu-row {
+	padding-top: 10px;
+	padding-bottom: 15px;
+}
+
+.menu-options {
+	height: 110px;
+	width: 110px;
+	border-radius: 50%;
+	border: 1px dotted $primary-color;
+}
+
+.menu-header {
+	margin-left: 19px;
+}
+h4 {
+	font-family: 'Lilita One', cursive;
+	color: $secondary-color;
+	font-size: 28px;
+	text-align: center;
+}
+
+.see-all {
+	display: block;
+	margin-left: 27%;
+	width: 61%;
+	background-color: $primary-color;
+	border-color: $primary-color;
+	font-family: 'Amatic SC', cursive;
+	font-size: 24px;
+	font-weight: 600;
+	color: $back-color;
+}
+
+.see-all:hover {
+	background-color: $secondary-color;
+	border-color: $secondary-color;
+}
+
+.fa-angle-double-right {
+	font-size: 20px;
+	margin-left: 16px;
+}
 @media (max-width: 586px)  {
 	.split {
 		height: 82vh;

@@ -249,6 +249,58 @@ h3 {
     left: -50px;
     height: 15vh; } }
 
+/*
+** Menu Page
+*/
+.menu {
+  height: 80vh;
+  background-size: cover;
+  background-image: url("/img/split1.jpg");
+  border-radius: .5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: right;
+  padding: 0 30px; }
+
+.menu-row {
+  padding-top: 10px;
+  padding-bottom: 15px; }
+
+.menu-options {
+  height: 110px;
+  width: 110px;
+  border-radius: 50%;
+  border: 1px dotted #bd3019; }
+
+.menu-header {
+  margin-left: 19px; }
+
+h4 {
+  font-family: 'Lilita One', cursive;
+  color: #4aa942;
+  font-size: 28px;
+  text-align: center; }
+
+.see-all {
+  display: block;
+  margin-left: 27%;
+  width: 61%;
+  background-color: #bd3019;
+  border-color: #bd3019;
+  font-family: 'Amatic SC', cursive;
+  font-size: 24px;
+  font-weight: 600;
+  color: #f8f8f8; }
+
+.see-all:hover {
+  background-color: #4aa942;
+  border-color: #4aa942; }
+
+.fa-angle-double-right {
+  font-size: 20px;
+  margin-left: 16px; }
+
 @media (max-width: 586px) {
   .split {
     height: 82vh; } }

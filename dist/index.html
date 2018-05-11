@@ -24,13 +24,13 @@
 						<a class="nav-link active" href="#">Menu</a>
 					 </li>
 					 <li class="nav-item">
-						<a class="nav-link" href="#">About</a>
+						<a class="nav-link" href="/about.html">About</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" href="#">Catering</a>
+						<a class="nav-link" href="/cater.html">Catering</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" href="#">Contact</a>
+						<a class="nav-link" href="/contact.html" target="_blank">Contact</a>
 					</li>
 				</ul>
 				<div id="logo">
@@ -52,28 +52,29 @@
 		<div class="split">
 			<div class="container">
 				<div class="row ingredient-1">
-					<div class="col-sm-4">
+					<div class="col-sm-6 my-auto">
 						<h3 class="ingredient-name">Pomegranate</h3>
 					</div>
-					<div class="col">
+					<div class="col col-sm-6">
 						<img src="/img/pom.jpg" alt="">
 						<p class="ingredient-learn pom"><a class="pom-learn" onclick="pomLearn()"><span class="text1">Learn More</span></a></p>
 					</div>
 				</div>
 				<div class="row ingredient-1">
-					<div class="col-sm-4">
+					
+					<div class="col-sm-6 my-auto">
 						<h3 class="ingredient-name">Tomato</h3>
 					</div>
-					<div class="col">
+					<div class="col col-sm-6">
 						<img src="/img/tomato.jpeg" alt="">
 						<p class="ingredient-learn tom"><a class="tom-learn" onclick="tomLearn()"><span class="text1">Learn More</span></a></p>
 					</div>
 				</div>
 				<div class="row ingredient-1">
-					<div class="col-sm-4">
+					<div class="col-sm-6 my-auto">
 						<h3 class="ingredient-name">Cranberry</h3>
 					</div>
-					<div class="col">
+					<div class="col col-sm-6">
 						<img src="/img/cran.jpg" alt="">
 						<p class="ingredient-learn cran"><a class="cran-learn" onclick="cranLearn()"><span class="text1">Learn More</span></a></p>
 					</div>
@@ -94,13 +95,208 @@
 						<img src="img/menustraw.jpg" alt="strawberry smoothie" class="menu-options">
 					</div>
 					<div class="col-8">
-						<h2 class="menu-header">Smoothies</h2>
-						<button class="btn btn-primary see-all">See All</button>
+						<h4 class="menu-header">Smoothies</h4>
+						<button type="button" class="btn see-all" data-toggle="modal" data-target="#modal-smoothies">See All<i class="fas fa-angle-double-right"></i></button>
+				<!-- Modal Smoothie -->
+						<div class="modal fade" id="modal-smoothies" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+							<div class="modal-dialog" role="document">
+								<div class="modal-content">
+									<div class="modal-header">
+										<h5 class="modal-title" id="exampleModalLabel">Smoothies</h5>
+										<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+											<span aria-hidden="true">&times;</span>
+										</button>
+									</div>
+									<div class="modal-body">
+										<div class="row">
+											<img src="img/menustraw.jpg" alt="strawberry smoothie" class="modal-img">
+											<p class="modal-p">Strawberry-Slam</p>
+										</div>
+										
+										<div class="row">
+											<img src="img/smoothie-beet.jpg" alt="strawberry smoothie" class="modal-img">
+											<p class="modal-p">Heart-Beet</p>
+										</div>
+										
+										<div class="row">
+											<img src="img/smoothie-cherry.png" alt="strawberry smoothie" class="modal-img">
+											<p class="modal-p">Cha-Cha-Cherry</p>
+										</div>
+										
+										<div class="row">
+											<img src="img/smoothie-cran.jpg" alt="strawberry smoothie" class="modal-img">
+											<p class="modal-p">Merry-Cranberry</p>
+										</div>
+										<div class="row">
+											<img src="img/smoothie-pom.jpeg" alt="strawberry smoothie" class="modal-img">
+											<p class="modal-p">Power-Pomegranate</p>
+										</div>
+									</div>
+									<div class="modal-footer">
+										<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+				</div>
+
+				<hr/>
+				<div class="row menu-row">
+					<div class="col-4">
+						<img src="img/menujuicewater.jpg" alt="strawberry smoothie" class="menu-options">
+					</div>
+					<div class="col-8">
+						<h4 class="menu-header">Fresh Juices</h4>
+						<button type="button" class="btn see-all" data-toggle="modal" data-target="#modal-juices">See All<i class="fas fa-angle-double-right"></i></button>
+
+					<!-- Modal Juice -->
+						<div class="modal fade" id="modal-juices" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+							<div class="modal-dialog" role="document">
+								<div class="modal-content">
+									<div class="modal-header">
+										<h5 class="modal-title" id="exampleModalLabel">Fresh Juices</h5>
+										<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+											<span aria-hidden="true">&times;</span>
+										</button>
+									</div>
+									<div class="modal-body">
+										<div class="row">
+											<img src="img/juice-beet.jpg" alt="strawberry smoothie" class="modal-img">
+											<p class="modal-p">Super-Beet Juice</p>
+										</div>
+										
+										<div class="row">
+											<img src="img/juice-cran.jpg" alt="strawberry smoothie" class="modal-img">
+											<p class="modal-p">Pick-Up-Cranberry Juice</p>
+										</div>
+										
+										<div class="row">
+											<img src="img/juice-guava.jpg" alt="strawberry smoothie" class="modal-img">
+											<p class="modal-p">Go-Go-Guava Juice</p>
+										</div>
+										
+										<div class="row">
+											<img src="img/juice-straw.jpg" alt="strawberry smoothie" class="modal-img">
+											<p class="modal-p">Sweet-Strawberry Juice</p>
+										</div>
+										<div class="row">
+											<img src="img/juice-water.jpg" alt="strawberry smoothie" class="modal-img">
+											<p class="modal-p">Wake-Watermelon Juice</p>
+										</div>
+									</div>
+									<div class="modal-footer">
+										<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+									</div>
+								</div>
+							</div>
+						</div>
+
+
+
+					</div>
+				</div>
+				<hr/>
+				<div class="row menu-row">
+					<div class="col-4">
+						<img src="img/menubites.jpg" alt="strawberry smoothie" class="menu-options">
+					</div>
+					<div class="col-8">
+						<h4 class="menu-header">Tasty Bites</h4>
+						<button type="button" class="btn see-all" data-toggle="modal" data-target="#modal-bites">See All<i class="fas fa-angle-double-right"></i></button>
+
+					<!-- Modal Bites -->
+						<div class="modal fade" id="modal-bites" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+							<div class="modal-dialog" role="document">
+								<div class="modal-content">
+									<div class="modal-header">
+										<h5 class="modal-title" id="exampleModalLabel">Tasty Bites</h5>
+										<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+											<span aria-hidden="true">&times;</span>
+										</button>
+									</div>
+									<div class="modal-body">
+										<div class="row">
+											<img src="img/bites-oat.png" alt="strawberry smoothie" class="modal-img">
+											<p class="modal-p">Healthy-Oats</p>
+										</div>
+										
+										<div class="row">
+											<img src="img/bites-pan.jpg" alt="strawberry smoothie" class="modal-img">
+											<p class="modal-p">Breakfast-Pancakes</p>
+										</div>
+										
+										<div class="row">
+											<img src="img/bites-pret.jpg" alt="strawberry smoothie" class="modal-img">
+											<p class="modal-p">Baked-Pretzels</p>
+										</div>
+										
+										<div class="row">
+											<img src="img/bites-sand.jpeg" alt="strawberry smoothie" class="modal-img">
+											<p class="modal-p">Red-Garden Sandwiches</p>
+										</div>
+									</div>
+									<div class="modal-footer">
+										<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+									</div>
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+				<hr/>
+				<div class="row menu-row">
+					<div class="col-4">
+						<img src="img/menuenergy.jpg" alt="strawberry smoothie" class="menu-options">
+					</div>
+					<div class="col-8">
+						<h4 class="menu-header">Energy Bowls</h4>
+						<button type="button" class="btn see-all" data-toggle="modal" data-target="#modal-bowls">See All<i class="fas fa-angle-double-right"></i></button>
+
+					<!-- Modal Bowls -->
+						<div class="modal fade" id="modal-bowls" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+							<div class="modal-dialog" role="document">
+								<div class="modal-content">
+									<div class="modal-header">
+										<h5 class="modal-title" id="exampleModalLabel">Energy Bowls</h5>
+										<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+											<span aria-hidden="true">&times;</span>
+										</button>
+									</div>
+									<div class="modal-body">
+										<div class="row">
+											<img src="img/bowl-1.png" alt="strawberry smoothie" class="modal-img">
+											<p class="modal-p">Mixed-Berry Bowl</p>
+										</div>
+										
+										<div class="row">
+											<img src="img/bowl-2.png" alt="strawberry smoothie" class="modal-img">
+											<p class="modal-p">Smooth-And-Fresh Bowl</p>
+										</div>
+										
+										<div class="row">
+											<img src="img/bowl-3.jpg" alt="strawberry smoothie" class="modal-img">
+											<p class="modal-p">Big-Red-Machine Bowl</p>
+										</div>
+										
+										<div class="row">
+											<img src="img/bowl-4.jpg" alt="strawberry smoothie" class="modal-img">
+											<p class="modal-p">Half-And-Half Bowl</p>
+										</div>
+									</div>
+									<div class="modal-footer">
+										<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+									</div>
+								</div>
+							</div>
+						</div>
+
 					</div>
 				</div>
 			</div>
 		</div>
-
 		
 	</div>
 

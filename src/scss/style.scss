@@ -25,6 +25,10 @@ h2 {
 	font-size: 32px;
 
 }
+
+p {
+	font-family: 'Lato', Helvetica;
+}
 // Nav
 
 .nav {
@@ -230,7 +234,9 @@ h3{
 	animation-duration: 1s;
 	animation-fill-mode: forwards;
 	background-color: $primary-color;
-	color: $primary-color;
+	color: $back-color;
+	font-size: 20px;
+	display: block;
 	top: 0px;
 	right: 	0px;
 	bottom: 0px;
@@ -256,7 +262,9 @@ h3{
 	animation-duration: 1s;
 	animation-fill-mode: forwards;
 	background-color: $primary-color;
-	color: $primary-color;
+	color: $back-color;
+	font-size: 20px;
+	display: block;
 	top: 0px;
 	right: 	0px;
 	bottom: 0px;
@@ -282,7 +290,9 @@ h3{
 	animation-duration: 1s;
 	animation-fill-mode: forwards;
 	background-color: $primary-color;
-	color: $secondary-color	;
+	color: $back-color;
+	font-size: 20px;
+	display: block;
 	top: 0px;
 	right: 	0px;
 	bottom: 0px;
@@ -304,7 +314,7 @@ h3{
 .menu {
 	height: 80vh;
 	background-size: cover;
-	background-image: url('/img/split1.jpg');
+	background: linear-gradient(to right, #f5f9fa, #e7eff2);
 	border-radius: .5px;
 	display: flex;
 	flex-direction: column;
@@ -356,8 +366,91 @@ h4 {
 	font-size: 20px;
 	margin-left: 16px;
 }
+
+
+
+// About
+
+.intro-about {
+	margin-top: 10px;
+}
+
+.head2 {
+	height: 106vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+
+.modal-content {
+	background-color: $back-color;
+}
+.modal-img {
+  height: 64px;
+  width: 64px;
+  border-radius: 50%;
+  float: left;
+  margin-top: 13px;
+  margin-left: 4px;
+  border: 1px dotted $primary-color;
+}
+
+.modal-body {
+  padding-top: 0;
+}
+.modal-p {
+  margin-top: 15px;
+  font-family: 'Amatic SC', cursive;
+  color: $primary-color;
+  font-size: 33px;
+  margin-left: 54px;
+}
+
+.modal-title {
+	font-family: "Lilita One", cursive;
+	color: $secondary-color;
+	font-size: 38px;
+}
+
+
+
+
+// Contact
+.google-form {
+	width: 100%;
+}
 @media (max-width: 586px)  {
 	.split {
 		height: 82vh;
+	}
+}
+
+@media (min-width: 768px) {
+	.split {
+		padding-top: 10px;
+		height: 90vh;
+	}
+	.pom-info {
+		max-width: 122%;
+		height: 100px;
+	}
+	.ingredient-1 {
+		margin-top: 100px;
+	}
+	.split img {
+		height: 150px;
+		width: 150px;
+	}
+	.ingredient-learn {
+		padding-top: 10px;
+		padding-left: 4px;
+	}
+}
+
+@media (min-width: 992px) {
+	.ingredient-learn {
+		padding-left: 33px;
 	}
 }

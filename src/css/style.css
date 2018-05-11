@@ -191,7 +191,8 @@ h3 {
   display: block;
   top: 0px;
   right: 0px;
-  bottom: 0px; }
+  bottom: 0px;
+  text-align: center; }
 
 .pom-info span {
   display: none; }
@@ -199,12 +200,12 @@ h3 {
 @keyframes pomexpand {
   0% {
     width: 59vh;
-    left: -50px;
+    left: 50px;
     height: 5vh; }
   100% {
-    width: 59vh;
-    left: -50px;
-    height: 15vh; } }
+    width: 100%;
+    left: 0px;
+    height: 100%; } }
 
 .tom-info {
   height: 10px;
@@ -217,7 +218,8 @@ h3 {
   display: block;
   top: 0px;
   right: 0px;
-  bottom: 0px; }
+  bottom: 0px;
+  text-align: center; }
 
 .tom-info span {
   display: none; }
@@ -225,12 +227,12 @@ h3 {
 @keyframes tomexpand {
   0% {
     width: 59vh;
-    left: -50px;
+    left: 50px;
     height: 5vh; }
   100% {
-    width: 59vh;
-    left: -50px;
-    height: 15vh; } }
+    width: 100%;
+    left: 0px;
+    height: 100%; } }
 
 .cran-info {
   height: 10px;
@@ -243,7 +245,8 @@ h3 {
   display: block;
   top: 0px;
   right: 0px;
-  bottom: 0px; }
+  bottom: 0px;
+  text-align: center; }
 
 .cran-info span {
   display: none; }
@@ -251,12 +254,12 @@ h3 {
 @keyframes cranexpand {
   0% {
     width: 59vh;
-    left: -50px;
+    left: 50px;
     height: 5vh; }
   100% {
-    width: 59vh;
-    left: -50px;
-    height: 15vh; } }
+    width: 100%;
+    left: 0px;
+    height: 100%; } }
 
 /*
 ** Menu Page
@@ -290,6 +293,9 @@ h4 {
   color: #4aa942;
   font-size: 28px;
   text-align: center; }
+
+.menu-info {
+  display: none; }
 
 .see-all {
   display: block;
@@ -369,8 +375,42 @@ h4 {
     width: 150px; }
   .ingredient-learn {
     padding-top: 10px;
-    padding-left: 4px; } }
+    padding-left: 4px;
+    font-size: 27px; }
+  .ingredient-name {
+    font-size: 3.00rem; } }
 
 @media (min-width: 992px) {
   .ingredient-learn {
-    padding-left: 33px; } }
+    padding-left: 27px;
+    padding-right: 27px; } }
+
+@media (min-width: 1200px) {
+  .intro2 {
+    padding-bottom: 20px;
+    padding-top: 20px; }
+  h2 {
+    font-size: 44px; }
+  .menu {
+    height: 155vh; }
+  .menu-options {
+    height: 200px;
+    width: 200px;
+    margin-right: 36%;
+    margin-top: 9%; }
+  .menu-header {
+    font-size: 40px; }
+  .menu-info {
+    display: block;
+    text-align: center;
+    margin-left: 10px;
+    font-family: 'Amatic SC', cursive;
+    color: #bd3019;
+    font-size: 40px; }
+  .see-all {
+    width: 18%;
+    margin-left: 43%; } }
+
+@media (min-width: 1714px) {
+  .menu-options {
+    margin-top: 6%; } }

@@ -200,7 +200,7 @@ h3 {
 @keyframes pomexpand {
   0% {
     width: 59vh;
-    left: 50px;
+    left: 0px;
     height: 5vh; }
   100% {
     width: 100%;
@@ -227,7 +227,7 @@ h3 {
 @keyframes tomexpand {
   0% {
     width: 59vh;
-    left: 50px;
+    left: 0px;
     height: 5vh; }
   100% {
     width: 100%;
@@ -254,12 +254,15 @@ h3 {
 @keyframes cranexpand {
   0% {
     width: 59vh;
-    left: 50px;
+    left: 0px;
     height: 5vh; }
   100% {
     width: 100%;
     left: 0px;
     height: 100%; } }
+
+.text1 {
+  cursor: pointer; }
 
 /*
 ** Menu Page
@@ -318,6 +321,12 @@ h4 {
 
 .intro-about {
   margin-top: 10px; }
+
+.about-text {
+  margin-left: 20%;
+  margin-right: 20%;
+  font-family: "Amatic SC", cursive;
+  font-size: 29px; }
 
 .head2 {
   height: 106vh;

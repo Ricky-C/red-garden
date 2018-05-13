@@ -320,10 +320,9 @@ h4 {
   margin-top: 10px; }
 
 .about-text {
-  margin-left: 20%;
-  margin-right: 20%;
+
   font-family: "Amatic SC", cursive;
-  font-size: 29px; }
+  font-size: 18px; }
 
 .head2 {
   height: 106vh;
@@ -384,12 +383,22 @@ h4 {
     padding-left: 4px;
     font-size: 27px; }
   .ingredient-name {
-    font-size: 3.00rem; } }
+    font-size: 3.00rem; } 
+	.about-text {
+  	font-family: "Amatic SC", cursive;
+  	font-size: 29px; }
+}
 
 @media (min-width: 992px) {
   .ingredient-learn {
     padding-left: 27px;
-    padding-right: 27px; } }
+    padding-right: 27px; } 
+	.about-text {
+ 	 margin-left: 20%;
+  	margin-right: 20%;
+  	font-family: "Amatic SC", cursive;
+  	font-size: 29px; }
+}
 
 @media (min-width: 1200px) {
   .intro2 {
